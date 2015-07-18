@@ -17,6 +17,13 @@ require.config({
         bootstrapSlider: '../dependencies/bootstrap-slider/bootstrap-slider',
         fileSaverLib: '../dependencies/loaders/FileSaver.min',
 
+        //audio
+        aurora: '../dependencies/aurora/aurora',//WAV, AU, AIFF, CAF and M4A
+        auroraAAC: '../dependencies/aurora/aac',
+        auroraALAC: '../dependencies/aurora/alac',
+        auroraFLAC: '../dependencies/aurora/flac',
+        auroraMP3: '../dependencies/aurora/mp3',
+
         //three
         three: '../dependencies/three',
         orbitControls: '../dependencies/OrbitControls',
