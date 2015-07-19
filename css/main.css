@@ -128,10 +128,6 @@ nav .btn {
 	background: #BABABA;
 }
 
-#STLImportStats {
-    display: none;
-}
-
 .dropdown-menu {
     margin-top: 0!important;
     border-top-left-radius: 0!important;
@@ -174,45 +170,13 @@ nav .btn {
     padding: 30px 30px 100px 30px;
     overflow-y: scroll;
     top: 50px;
-    bottom: 0;
+    bottom: 100px;
     position: absolute;
     width: 100%;
 }
 
 hr {
   border-color: #888 -moz-use-text-color #888;
-}
-
-
-#gcodeEditor {
-    font-family: Courier, monospace;
-    font-size: 13px;
-    line-height: 30px;
-    height: 400px;
-    width: 100%;
-    background-color: rgba(255,255,255,0.5);
-    white-space: pre-wrap;
-    padding: 15px 0 15px 20px;
-    overflow: auto;
-}
-
-#gcodeEditor:focus {
-    outline-width: 0;
-}
-
-#gcodeHighlighter{
-    padding: 0 0 0 10px;
-    width: 100%;
-    margin: 0 0 0 -10px;
-    left: -15px;
-    display: inline-block;
-    background-color: rgba(255, 255, 0, 0.35);
-}
-
-.postWarning {
-    background-color: rgba(255,0,0,0.15);
-    padding: 10px 15px 15px 15px;
-    margin: 20px 0;
 }
 
 input.intInput, input.floatInput{
@@ -331,10 +295,6 @@ input.intInput, input.floatInput{
   color: #B50303!important;
 }
 
-.cellsVisible{
-    padding-top: 7px!important;
-}
-
 .ribbon-selected {
     background-color: #000!important;
 }
@@ -350,10 +310,6 @@ input.intInput, input.floatInput{
 
 .btn-imageCustom img{
     height: 100%;
-}
-
-#manualSelectOrigin {
-      padding: 8px 12px 15px 12px!important
 }
 
 label {
@@ -382,28 +338,6 @@ label {
     -o-text-overflow: ellipsis;
 }
 
-.materialColorSwatch{
-    height: 30px;
-    width: 100%;
-}
-.materialColorSwatch>div {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-right: 10px;
-    border-radius: 3px;
-}
-
-.materialColorSwatch>span{
-    display: inline-block;
-    vertical-align: middle;
-    padding-bottom: 20px;
-}
-
-label.colorSwatches>span.icons{
-    margin: 5px 0;
-}
-
 #navViewMenu .dropdown-menu span{
     margin-right:10px;
 }
@@ -411,18 +345,6 @@ label.colorSwatches>span.icons{
 .CodeMirror {
     opacity: 0.6;
     margin: 0 20px 0 -10px;
-}
-
-.editComposite, .editMaterial {
-    margin-left:20px;
-}
-
-.materialListTitle{
-      display: inline-flex;
-      max-width: 220px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
 }
 
 .red {

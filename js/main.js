@@ -42,6 +42,7 @@ require.config({
         navViewMenu: 'menus/NavViewMenu',//view dropdown
         ribbon: 'menus/Ribbon',
         modalView: 'menus/ModalView',
+        audioView: 'menus/AudioView',
         menuWrapper: 'menus/MenuWrapperView',
         menuParent: 'menus/MenuParentView',
 
@@ -78,12 +79,13 @@ require.config({
 //};
 
 //init stuff
-require(['appState', 'navbar', 'ribbon', 'menuWrapper', 'threeModel', 'threeView', 'flatUI', 'bootstrapSlider'],
-    function(appState, Navbar, Ribbon, MenuWrapper, three, ThreeView){
+require(['appState', 'navbar', 'ribbon', 'menuWrapper', 'audioView', 'threeModel', 'threeView', 'flatUI', 'bootstrapSlider'],
+    function(appState, Navbar, Ribbon, MenuWrapper, AudioView, three, ThreeView){
 
     new MenuWrapper({model:appState});
     new Navbar({model:appState});
     new Ribbon({model:appState});
+    new AudioView({model:appState});
     new ThreeView({model:three});
 });
 

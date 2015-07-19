@@ -2,12 +2,6 @@
  * Created by aghassaei on 7/17/15.
  */
 
-
-/**
- * Created by aghassaei on 6/16/15.
- */
-
-
 define(['jquery', 'underscore', 'menuParent', 'plist', 'text!menus/templates/DefaultMenuView.html'],
     function($, _, MenuParentView, plist, template){
 
