@@ -21,9 +21,6 @@ define(['jquery', 'underscore', 'backbone', 'fileSaver', 'navViewMenu', 'appStat
             "click .saveUser":                                      "_saveUser",
             "change #saveUserFileName":                             "_saveUser",//detect enter key
 
-            "click .importJSON":                                    "_importJSON",
-            "change #jsonInput":                                    "_selectJSONFiles",
-
             "click #viewMenuDropdown":                              "_renderViewMenu"
         },
 
@@ -106,39 +103,6 @@ define(['jquery', 'underscore', 'backbone', 'fileSaver', 'navViewMenu', 'appStat
             var fileName = $("#saveAsFileName").val();
             fileSaver.save(fileName);
             $('#saveAsModel').modal('hide');
-        },
-
-
-
-
-        _importJSON: function(e){
-            e.preventDefault();
-            $("#jsonInput").click();
-        },
-
-        _selectJSONFiles: function(e){
-            e.preventDefault();
-            var input = $(e.target),
-            numFiles = input.get(0).files ? input.get(0).files.length : 1,
-            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-            this._readDataURL(numFiles, label, input.get(0).files);
-            input.val("");
-        },
-
-        _readDataURL: function(numFiles, filename, files){
-            if (numFiles>1) console.warn("too many files selected");
-            var reader = new FileReader();
-            reader.readAsText(files[0]);
-            reader.onload = (function() {
-                return function(e) {
-                    var extension = filename.substr(filename.length - 5);
-                    if (extension == ".json"){
-                        fileSaver.loadFile(JSON.parse(e.target.result));
-                    } else if (extension == ".user"){
-                        fileSaver.loadUser(JSON.parse(e.target.result));
-                    } else console.warn("file type not recognized");
-                }
-            })();
         }
 
     });

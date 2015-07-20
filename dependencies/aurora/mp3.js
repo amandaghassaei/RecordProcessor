@@ -3641,7 +3641,7 @@ exports.huff_pair_table = [
 
 },{}],7:[function(require,module,exports){
 var AV = (window.AV);
-
+console.log(AV);
 const ENCODINGS = ['latin1', 'utf16-bom', 'utf16-be', 'utf8'];
 
 var ID3Stream = AV.Base.extend({

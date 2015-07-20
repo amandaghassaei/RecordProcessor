@@ -18,7 +18,9 @@ define(['underscore', 'backbone', 'threeModel', 'three', 'plist', 'fileSaver'], 
 
             menuIsVisible: true,
             ribbonIsVisible: true,
-            axesAreVisible: false
+            axesAreVisible: false,
+
+            fileLoaded: false
         },
 
         initialize: function(){

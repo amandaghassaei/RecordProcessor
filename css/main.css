@@ -160,7 +160,7 @@ nav .btn {
     background-color: transparent;
 }
 
-#jsonInput {
+#audioInput {
     width: 0;
     height: 0;
     overflow: hidden;
